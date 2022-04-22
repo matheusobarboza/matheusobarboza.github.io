@@ -7,7 +7,7 @@ const Topbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo href="#intro">matheusobarboza.</Logo>
+          <Logo href="#intro">@matheusobarboza.</Logo>
         </Left>
         <Right></Right>
       </Wrapper>
