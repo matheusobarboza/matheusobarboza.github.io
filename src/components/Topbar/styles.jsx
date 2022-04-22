@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Person, Mail } from "@mui/icons-material";
 
 // global ${({ theme }) => theme.colors.mainColor}
 
