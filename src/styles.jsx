@@ -38,10 +38,9 @@ export const Email = styled.div`
 export const Line = styled.div`
   height: 80px;
   width: 8px;
-  border-right: 1px solid white;
+  border-right: 1px solid #59e3c5;
   position: absolute;
   left: 96%;
   bottom: 0px;
   writing-mode: vertical-rl;
-  color: white;
 `;
