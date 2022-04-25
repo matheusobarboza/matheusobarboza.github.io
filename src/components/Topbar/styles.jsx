@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"; 
 
 // global ${({ theme }) => theme.colors.mainColor}
 
@@ -17,7 +18,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-export const Logo = styled.a`
+export const Logo = styled(Link)`
   font-size: 35px;
   font-weight: 700;
   text-decoration: none;
@@ -45,7 +46,7 @@ export const ItemContainer = styled.div`
   margin-right: 50px;
 `;
 
-export const LinkMenu = styled.a`
+export const LinkMenu = styled(Link)`
   font-size: 15px;
   font-weight: 500;
   color: #818796;

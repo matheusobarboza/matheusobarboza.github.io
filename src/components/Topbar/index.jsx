@@ -6,38 +6,56 @@ import {
   Logo,
   ItemContainer,
   Topic,
-  LinkMenu,
+  LinkMenu
 } from "./styles";
 
+import { useMatch, useResolvedPath, Link } from "react-router-dom";
+
 const Topbar = () => {
+  function CustomLink({ children, to, ...props }) {
+    let resolved = useResolvedPath(to);
+    let match = useMatch({ path: resolved.pathname, end: true });
+
+    return (
+      <div>
+        <LinkMenu
+          style={{ color: match ? "#59e3c5" : "#818796" }}
+          to={to}
+          {...props}
+        >
+          {children}
+        </LinkMenu>
+      </div>
+    );
+  }
 
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo href="#intro">matheusobarboza.</Logo>
+          <Logo to="/intro">matheusobarboza.</Logo>
         </Left>
 
         <Right>
           <ItemContainer>
-            <LinkMenu href="#intro">
+            <CustomLink to={"/" || "/intro"}>
               <Topic>.</Topic>Home
-            </LinkMenu>
-            <LinkMenu href="#about">
+            </CustomLink>
+            <CustomLink to="/about">
               <Topic>.</Topic>Sobre
-            </LinkMenu>
-            <LinkMenu href="#portfolio">
-              <Topic>.</Topic>Portfolio
-            </LinkMenu>
-            <LinkMenu href="#skills">
-              <Topic>.</Topic>Skills
-            </LinkMenu>
-            <LinkMenu href="#projects">
-              <Topic>.</Topic>Projects
-            </LinkMenu>
-            <LinkMenu href="#contact">
-              <Topic>.</Topic>Contact
-            </LinkMenu>
+            </CustomLink>
+            <CustomLink to="/portfolio">
+              <Topic>.</Topic>Portfólio
+            </CustomLink>
+            <CustomLink to="/skills">
+              <Topic>.</Topic>Habilidades
+            </CustomLink>
+            <CustomLink to="/projects">
+              <Topic>.</Topic>Projetos
+            </CustomLink>
+            <CustomLink to="/contact">
+              <Topic>.</Topic>Contato
+            </CustomLink>
           </ItemContainer>
         </Right>
       </Wrapper>

@@ -6,7 +6,7 @@ import {
 
 const Intro = () => {
   return(
-    <Container id="intro">
+    <Container>
     </Container>
   );
 }
