@@ -36,7 +36,7 @@ export const Email = styled.div`
 `;
 
 export const Line = styled.div`
-  height: 80px;
+  height: 50px;
   width: 8px;
   border-right: 1px solid #59e3c5;
   position: absolute;
