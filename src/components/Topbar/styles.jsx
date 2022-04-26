@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"; 
+import { Link, NavLink } from "react-router-dom";
 
 // global ${({ theme }) => theme.colors.mainColor}
 
@@ -46,7 +46,7 @@ export const ItemContainer = styled.div`
   margin-right: 50px;
 `;
 
-export const LinkMenu = styled(Link)`
+export const LinkMenu = styled(NavLink)`
   font-size: 15px;
   font-weight: 500;
   color: #818796;
@@ -56,6 +56,10 @@ export const LinkMenu = styled(Link)`
   cursor: pointer;
 
   &:hover {
+    color: #59e3c5;
+  }
+
+  &[class*="active"] {
     color: #59e3c5;
   }
 `;

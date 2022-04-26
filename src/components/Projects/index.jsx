@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import {
-  Container,
-} from './styles';
+import { Container } from "./styles";
 
 const Projects = () => {
-  return(
-    <Container id='projects'>
-    </Container>
+  return (
+    <Container
+      animate={{ rotate: 360 }}
+      transition={{ duration: 1 }}
+    ></Container>
   );
-}
+};
 
 export default Projects;

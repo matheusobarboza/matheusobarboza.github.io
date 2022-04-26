@@ -3,7 +3,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import theme from "./global/theme";
 
-import { Email, Line } from "./styles";
+import { Email, Followme, Instagram, Github, Linkedin, Twitter } from "./styles";
 
 import AppRoutes from "./routes";
 
@@ -12,10 +12,17 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <AppRoutes />
 
+      <Followme>
+        <span>Follow me</span>
+        <Github />
+        <Linkedin />
+        <Instagram />
+        <Twitter />
+      </Followme>
+
       <Email>
         <span>matheus.barboza102@gmail.com</span>
       </Email>
-      <Line />
     </ThemeProvider>
   );
 };
