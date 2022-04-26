@@ -2,12 +2,12 @@ import React from "react";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import Intro from "../Intro";
-import About from "../About";
-import Portfolio from "../Portfolio";
-import Skills from "../Skills";
-import Projects from "../Projects";
-import Contact from "../Contact";
+import Intro from "../../pages/Intro";
+import About from "../../pages/About";
+import Portfolio from "../../pages/Portfolio";
+import Skills from "../../pages/Skills";
+import Projects from "../../pages/Projects";
+import Contact from "../../pages/Contact";
 
 import { AnimatePresence } from "framer-motion";
 
