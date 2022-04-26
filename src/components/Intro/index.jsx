@@ -12,7 +12,14 @@ import {
   Wrapper,
   MyName,
   Ocupation,
+  AwesomeIcon,
+  Next,
+  Top,
+  Bottom,
+  NextIcon,
 } from "./styles";
+
+import { faHandPeace, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Intro = () => {
   const defaultOptions = {
@@ -20,8 +27,8 @@ const Intro = () => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
   return (
@@ -31,21 +38,34 @@ const Intro = () => {
       exit={{ opacity: 0 }}
     >
       <Wrapper>
-        <Left>
-          <Lottie options={defaultOptions} height={400} width={400} />
-        </Left>
-        <Right>
-          <ContainerAboutMe>
-            <Hello>Olá!, eu me chamo</Hello>
-            <MyName>Matheus.</MyName>
-            <Ocupation>desenvolvedor front end + suporte técnico</Ocupation>
-            <AboutMe>
-              Eu sou desenvolvedor front-end<br />
-              e tenho experiência em suporte técnico<br />
-              (Smarthphones e Micros). 
-            </AboutMe>
-          </ContainerAboutMe>
-        </Right>
+        <Top>
+          <Left>
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </Left>
+          <Right>
+            <ContainerAboutMe>
+              <Hello>
+                Olá <AwesomeIcon color="yellow" icon={faHandPeace} />, eu me
+                chamo
+              </Hello>
+              <MyName>Matheus.</MyName>
+              <Ocupation>desenvolvedor front end + suporte técnico</Ocupation>
+              <AboutMe>
+                Eu sou desenvolvedor front-end
+                <br />
+                e tenho experiência em suporte técnico
+                <br />
+                (Smarthphones e Micros).
+              </AboutMe>
+            </ContainerAboutMe>
+          </Right>
+        </Top>
+        <Bottom>
+          <Next to="/about">
+            <span>Veja mais sobre mim</span>
+            <NextIcon color="#818796" size="1x" icon={faArrowRight} />
+          </Next>
+        </Bottom>
       </Wrapper>
     </Container>
   );
