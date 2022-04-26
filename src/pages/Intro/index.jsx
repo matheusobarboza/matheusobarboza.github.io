@@ -21,6 +21,8 @@ import {
 
 import { faHandPeace, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import Typical from "react-typical";
+
 const Intro = () => {
   const defaultOptions = {
     loop: true,
@@ -49,8 +51,14 @@ const Intro = () => {
                 chamo
               </Hello>
               <MyName>Matheus.</MyName>
-              <Ocupation>desenvolvedor front end + suporte técnico</Ocupation>
-              <AboutMe style={{ marginTop: 5 }} >Freelancer</AboutMe>
+              <Ocupation>
+                <Typical
+                  steps={[1000, "desenvolvedor front end", 1000, "+ suporte técnico."]}
+                  loop={Infinity}
+                  wrapper="b"
+                />
+              </Ocupation>
+              <AboutMe style={{ marginTop: 5 }}>Freelancer</AboutMe>
               <AboutMe>
                 Eu sou Desenvolvedor Front End
                 <br />
