@@ -8,6 +8,7 @@ import Portfolio from "../../pages/Portfolio";
 import Skills from "../../pages/Skills";
 import Projects from "../../pages/Projects";
 import Contact from "../../pages/Contact";
+import Services from "../../pages/Services";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -23,6 +24,7 @@ const AnimatedRoutes = () => {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>

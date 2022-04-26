@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
   justify-content: space-around;
 `;
 export const Logo = styled(Link)`
-  font-size: 35px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
   font-weight: 700;
   text-decoration: none;
   color: white;
@@ -56,11 +57,12 @@ export const LinkMenu = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover { //quando o mouse passar por cima
     color: #59e3c5;
+    font-weight: bold;
   }
 
-  &[class*="active"] {
+  &[class*="active"] { //quando o link estiver ativo
     color: #59e3c5;
     font-weight: 700;
   }

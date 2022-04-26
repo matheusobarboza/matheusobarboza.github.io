@@ -50,8 +50,9 @@ const Intro = () => {
               </Hello>
               <MyName>Matheus.</MyName>
               <Ocupation>desenvolvedor front end + suporte técnico</Ocupation>
+              <AboutMe style={{ marginTop: 5 }} >Freelancer</AboutMe>
               <AboutMe>
-                Eu sou desenvolvedor front-end
+                Eu sou Desenvolvedor Front End
                 <br />
                 e tenho experiência em suporte técnico
                 <br />

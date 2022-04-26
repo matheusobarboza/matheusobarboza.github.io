@@ -23,6 +23,7 @@ const Topbar = () => {
             <LinkMenu to="/portfolio">Portfólio</LinkMenu>
             <LinkMenu to="/skills">Habilidades</LinkMenu>
             <LinkMenu to="/projects">Projetos</LinkMenu>
+            <LinkMenu to="/services">Serviços</LinkMenu>
             <LinkMenu to="/contact">Contato</LinkMenu>
           </ItemContainer>
         </Right>

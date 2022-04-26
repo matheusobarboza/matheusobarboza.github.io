@@ -53,7 +53,7 @@ export const Hello = styled.span`
 `;
 
 export const AboutMe = styled.p`
-  margin-top: 15px;
+  margin-top: 20px;
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -70,7 +70,7 @@ export const MyName = styled.span`
 `;
 
 export const Ocupation = styled.span`
-  margin-top: 15px;
+  margin-top: 20px;
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -85,7 +85,7 @@ export const AwesomeIcon = styled(FontAwesomeIcon)`
 
 export const NextIcon = styled(FontAwesomeIcon)`
   color: ${props => props.color};
-  margin-top: 10px;
+  align-self: center;
 
   &:hover {
     color: #fff;
