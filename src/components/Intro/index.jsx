@@ -2,7 +2,17 @@ import React from "react";
 import Lottie from "react-lottie";
 import animationData from "../../lotties/developer2-lottie";
 
-import { Container, Left, Right } from "./styles";
+import {
+  Container,
+  Left,
+  Right,
+  AboutMe,
+  Hello,
+  ContainerAboutMe,
+  Wrapper,
+  MyName,
+  Ocupation,
+} from "./styles";
 
 const Intro = () => {
   const defaultOptions = {
@@ -10,8 +20,8 @@ const Intro = () => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
+      preserveAspectRatio: "xMidYMid slice"
+    }
   };
 
   return (
@@ -20,13 +30,23 @@ const Intro = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Left>
-        <Lottie options={defaultOptions} height={400} width={400} />
-      </Left>
-      <Right>
-        <h2>Olá,</h2>
-        <h3>eu me chamo Matheus</h3>
-      </Right>
+      <Wrapper>
+        <Left>
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </Left>
+        <Right>
+          <ContainerAboutMe>
+            <Hello>Olá!, eu me chamo</Hello>
+            <MyName>Matheus.</MyName>
+            <Ocupation>desenvolvedor front end + suporte técnico</Ocupation>
+            <AboutMe>
+              Eu sou desenvolvedor front-end<br />
+              e tenho experiência em suporte técnico<br />
+              (Smarthphones e Micros). 
+            </AboutMe>
+          </ContainerAboutMe>
+        </Right>
+      </Wrapper>
     </Container>
   );
 };

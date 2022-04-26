@@ -25,45 +25,20 @@ export const Sections = styled.div`
   }
 `;
 
-export const Email = styled.div`
-  position: absolute;
-  left: 96%;
-  bottom: 5%;
-  writing-mode: vertical-rl;
-  font-size: 16px;
-  color: #ffff;
-  cursor: pointer;
-
-  span {
-    font-weight: 500;
-  }
-
-  &:hover {
-    color: #59e3c5;
-  }
-`;
-
 export const Followme = styled.div`
   display: flex;
   position: absolute;
-  right: 96%;
+  left: 95%;
   bottom: 5%;
   writing-mode: vertical-rl;
   cursor: pointer;
   justify-content: space-around;
   align-items: center;
   height: 200px;
-
-  span{
-    writing-mode: horizontal-tb;
-    color: #818796;
-    cursor: auto;
-    font-weight: 500;
-  }
 `;
 
 export const Instagram = styled(FaInstagram)`
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
 
   &:hover {
@@ -72,7 +47,7 @@ export const Instagram = styled(FaInstagram)`
 `;
 
 export const Github = styled(FaGithub)`
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
 
   &:hover {
@@ -81,7 +56,7 @@ export const Github = styled(FaGithub)`
 `;
 
 export const Linkedin = styled(FaLinkedin)`
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
 
   &:hover {
@@ -90,7 +65,7 @@ export const Linkedin = styled(FaLinkedin)`
 `;
 
 export const Twitter = styled(FaTwitter)`
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
 
   &:hover {

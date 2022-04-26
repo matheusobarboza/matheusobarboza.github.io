@@ -3,7 +3,13 @@ import React from "react";
 import { Container } from "./styles";
 
 const Contact = () => {
-  return <Container animate={{ x: [0, 100, 0] }}></Container>;
+  return (
+    <Container
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    ></Container>
+  );
 };
 
 export default Contact;

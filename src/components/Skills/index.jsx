@@ -5,8 +5,9 @@ import { Container } from "./styles";
 const Skills = () => {
   return (
     <Container
-      cx={500}
-      animate={{ cx: [null, 100] }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     ></Container>
   );
 };

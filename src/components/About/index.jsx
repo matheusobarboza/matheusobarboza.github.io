@@ -5,9 +5,9 @@ import { Container } from "./styles";
 const About = () => {
   return (
     <Container
-      //rotation
-      animate={{ rotate: 360 }}
-      transition={{ duration: 1 }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
     ></Container>
   );
 };

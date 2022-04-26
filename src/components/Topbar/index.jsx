@@ -5,12 +5,10 @@ import {
   Right,
   Logo,
   ItemContainer,
-  Topic,
-  LinkMenu,
+  LinkMenu
 } from "./styles";
 
 const Topbar = () => {
-
   return (
     <Container>
       <Wrapper>
@@ -20,24 +18,12 @@ const Topbar = () => {
 
         <Right>
           <ItemContainer>
-            <LinkMenu to={"/"}>
-              <Topic>.</Topic>Home
-            </LinkMenu>
-            <LinkMenu to="/about">
-              <Topic>.</Topic>Sobre
-            </LinkMenu>
-            <LinkMenu to="/portfolio">
-              <Topic>.</Topic>Portfólio
-            </LinkMenu>
-            <LinkMenu to="/skills">
-              <Topic>.</Topic>Habilidades
-            </LinkMenu>
-            <LinkMenu to="/projects">
-              <Topic>.</Topic>Projetos
-            </LinkMenu>
-            <LinkMenu to="/contact">
-              <Topic>.</Topic>Contato
-            </LinkMenu>
+            <LinkMenu to={"/"}>Home</LinkMenu>
+            <LinkMenu to="/about">Sobre</LinkMenu>
+            <LinkMenu to="/portfolio">Portfólio</LinkMenu>
+            <LinkMenu to="/skills">Habilidades</LinkMenu>
+            <LinkMenu to="/projects">Projetos</LinkMenu>
+            <LinkMenu to="/contact">Contato</LinkMenu>
           </ItemContainer>
         </Right>
       </Wrapper>

@@ -48,6 +48,7 @@ export const ItemContainer = styled.div`
 
 export const LinkMenu = styled(NavLink)`
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   color: #818796;
   letter-spacing: 1.5px;
@@ -61,5 +62,6 @@ export const LinkMenu = styled(NavLink)`
 
   &[class*="active"] {
     color: #59e3c5;
+    font-weight: 700;
   }
 `;
