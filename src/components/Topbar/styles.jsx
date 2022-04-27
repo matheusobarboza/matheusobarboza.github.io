@@ -6,6 +6,8 @@ import { Link, NavLink } from "react-router-dom";
 //background second option 212121
 //font primary BFBDC1
 //font second 818796
+//verde 59e3c5
+// #ccc, #ff5858, #cc2e5d
 
 export const Container = styled.div`
   width: 100%;
@@ -27,10 +29,15 @@ export const Logo = styled(Link)`
   font-size: 40px;
   font-weight: 700;
   text-decoration: none;
-  color: white;
+  background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
 
   &:hover {
-    color: #59e3c5;
+    /* color: #59e3c5; */
+    background-position: -100%;
   }
 `;
 export const Right = styled.div``;
@@ -55,14 +62,17 @@ export const LinkMenu = styled(NavLink)`
   padding: 15px;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 250ms;
 
   &:hover { //quando o mouse passar por cima
-    color: #59e3c5;
+    color: #fff;
     font-weight: bold;
+    letter-spacing: 2px;
+    transform: translateY(-10px);
   }
 
   &[class*="active"] { //quando o link estiver ativo
-    color: #59e3c5;
-    font-weight: 700;
+    color: #fff;
+    font-weight: bold;
   }
 `;

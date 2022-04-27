@@ -20,6 +20,6 @@ export const SocialIcon = styled(FontAwesomeIcon)`
   color: #fff;
 
   &:hover {
-    color: #59e3c5;
+    color: #ff5858;
   }
 `;

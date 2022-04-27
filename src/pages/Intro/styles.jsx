@@ -68,10 +68,16 @@ export const MyName = styled.span`
   color: #fff;
   margin-top: 15px;
   transition: transform 250ms; //animação de subir o component part1
+  background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d); //animação gradiente 
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
 
   &:hover {
     transform: translateY(-10px); //animação de subir o component part2
     font-weight: 600;
+    background-position: -100%;
   }
 `;
 
