@@ -53,7 +53,7 @@ const Intro = () => {
               <MyName>Matheus.</MyName>
               <Ocupation>
                 <Typical
-                  steps={[1000, "desenvolvedor front end", 1000, "+ suporte técnico."]}
+                  steps={[1000, "desenvolvedor front end", 1000, "suporte técnico"]}
                   loop={Infinity}
                   wrapper="b"
                 />
