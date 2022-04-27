@@ -2,11 +2,15 @@ import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
 // global ${({ theme }) => theme.colors.mainColor}
+//background 0F1020
+//background second option 212121
+//font primary BFBDC1
+//font second 818796
 
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: #212121;
+  background-color: #0F1020;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -35,11 +39,6 @@ export const Left = styled.div`
   display: flex;
 `;
 
-export const Topic = styled.span`
-  font-size: 15px;
-  color: #59e3c5;
-`;
-
 export const ItemContainer = styled.div`
   display: flex;
   align-items: center;
@@ -51,7 +50,7 @@ export const LinkMenu = styled(NavLink)`
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  color: #818796;
+  color: #BFBDC1;
   letter-spacing: 1.5px;
   padding: 15px;
   text-decoration: none;

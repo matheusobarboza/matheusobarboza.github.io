@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Container = styled(motion.div)`
   display: flex;
   justify-content: center;
-  background-color: #212121;
+  background-color: #0F1020;
 `;
 
 export const Wrapper = styled.div`
@@ -67,6 +67,12 @@ export const MyName = styled.span`
   font-size: 60px;
   color: #fff;
   margin-top: 15px;
+  transition: transform 250ms; //animação de subir o component part1
+
+  &:hover {
+    transform: translateY(-10px); //animação de subir o component part2
+    font-weight: 600;
+  }
 `;
 
 export const Ocupation = styled.span`
@@ -86,6 +92,7 @@ export const AwesomeIcon = styled(FontAwesomeIcon)`
 export const NextIcon = styled(FontAwesomeIcon)`
   color: ${props => props.color};
   align-self: center;
+  color: #fff;
 
   &:hover {
     color: #fff;
@@ -96,8 +103,10 @@ export const Next = styled(Link)`
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color: #818796;
   text-decoration: none;
+  color: #818796;
+  padding: 10px;
+  transition: transform 250ms;
 
   span{
     margin-right: 15px;
@@ -105,5 +114,7 @@ export const Next = styled(Link)`
 
   &:hover {
     color: #fff;
+    font-weight: 700;
+    transform: translateY(-10px);
   }
 `;
