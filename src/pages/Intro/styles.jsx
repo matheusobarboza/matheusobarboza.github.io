@@ -76,7 +76,7 @@ export const MyName = styled.span`
 
   &:hover {
     transform: translateY(-10px); //animação de subir o component part2
-    font-weight: 600;
+    /* font-weight: 600; */
     background-position: -100%;
   }
 `;

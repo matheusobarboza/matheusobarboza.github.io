@@ -50,7 +50,7 @@ const Intro = () => {
                 Olá <AwesomeIcon color="yellow" icon={faHandPeace} />, eu me
                 chamo
               </Hello>
-              <MyName>Matheus.</MyName>
+              <MyName title="Surprise :)" >Matheus.</MyName>
               <Ocupation>
                 <Typical
                   steps={[1000, "desenvolvedor front end", 1000, "suporte técnico"]}

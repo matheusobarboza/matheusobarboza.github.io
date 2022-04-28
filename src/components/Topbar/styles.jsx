@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // global ${({ theme }) => theme.colors.mainColor}
 //background 0F1020
@@ -12,7 +13,7 @@ import { Link, NavLink } from "react-router-dom";
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: #0F1020;
+  background-color: #0f1020;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -55,24 +56,29 @@ export const ItemContainer = styled.div`
 
 export const LinkMenu = styled(NavLink)`
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  color: #BFBDC1;
+  color: #bfbdc1;
   letter-spacing: 1.5px;
   padding: 15px;
   text-decoration: none;
   cursor: pointer;
   transition: transform 250ms;
 
-  &:hover { //quando o mouse passar por cima
+  &:hover {
+    //quando o mouse passar por cima
     color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
     transform: translateY(-10px);
   }
 
-  &[class*="active"] { //quando o link estiver ativo
+  &[class*="active"] {
+    //quando o link estiver ativo
     color: #fff;
     font-weight: bold;
   }
+`;
+
+export const AwesomeIcon = styled(FontAwesomeIcon)`
+  color: ${(props) => props.color};
+  margin-bottom: 2px;
 `;
