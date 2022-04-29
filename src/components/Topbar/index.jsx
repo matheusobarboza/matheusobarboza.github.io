@@ -6,11 +6,7 @@ import {
   Logo,
   ItemContainer,
   LinkMenu,
-  AwesomeIcon,
 } from "./styles";
-
-import { faHouse, faCircleInfo, faBook, faListCheck, faCode, faLaptop, faIdBadge } from "@fortawesome/free-solid-svg-icons";
-// import {  } from "@fortawesome/free-regular-svg-icons";
 
 const Topbar = () => {
   return (
