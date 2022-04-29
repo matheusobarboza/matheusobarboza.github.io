@@ -1,19 +1,22 @@
 import React from "react";
 
-import { faMugHot, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faMugHot, faCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 
 import {
   Container,
   Wrapper,
-  Description,
+  ContainerDescription,
   Left,
   Right,
   Img,
   MyName,
   AwesomeIcon,
   Ul,
-  Li
+  Li,
+  SpanLi,
+  WhoIm,
+  Line
 } from "./styles";
 
 import Me from "../../assets/me.png";
@@ -27,32 +30,43 @@ const About = () => {
     >
       <Wrapper>
         <Left>
-          <Description>
-            Eu me chamo <MyName>Matheus Barboza.</MyName> Sou formado em
+          <WhoIm>
+            <span>Quem Sou eu?</span> 
+            <Line /></WhoIm>
+          <ContainerDescription>
+            <span>
+              Eu me chamo <MyName>Matheus Barboza.</MyName> Sou formado em
+            </span>
             <br />
-            Análise e Desenvolvimento de Sistemas pelo IFBA.
+            <span>Análise e Desenvolvimento de Sistemas pelo IFBA.</span>
             <br /> <br />
-            Coisas que eu gosto
+            <span>Coisas que eu gosto</span>
             <br />
             <br />
             <Ul>
               <Li>
-                Eu amo café <AwesomeIcon color="#A57F60" icon={faMugHot} />
+                <AwesomeIcon color="#A57F60" icon={faMugHot} />
+                <SpanLi margin="8px">Eu amo café</SpanLi>
               </Li>
               <Li>
-                {" "}
-                <Typical
-                  steps={[1000, "Programar", 1000, "Desenvolver"]}
-                  loop={Infinity}
-                  wrapper="a"
-                />{" "}
-                <AwesomeIcon color="#07BEB8" icon={faCode} /> aplicativos e sites
+                <AwesomeIcon color="#07BEB8" icon={faCode} />{" "}
+                <SpanLi>
+                  <Typical
+                    steps={[1000, "Programar", 1000, "Desenvolver"]}
+                    loop={Infinity}
+                    wrapper="a"
+                  />
+                </SpanLi>{" "}
+                <span>Apps e Sites</span>
               </Li>
               <Li>
-                Consertar Computadores e Smartphones
+                <AwesomeIcon color="#07BEB8" icon={faLaptop} />
+                <SpanLi margin="7px">
+                  Consertar Computadores e Smartphones
+                </SpanLi>
               </Li>
             </Ul>
-          </Description>
+          </ContainerDescription>
         </Left>
         <Right>
           <Img src={Me} />
