@@ -12,7 +12,7 @@ export const Container = styled(motion.div)`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 8rem;
+  padding: 7rem;
 
   @media screen and (max-width: 1240px) {
     justify-content: space-between;
