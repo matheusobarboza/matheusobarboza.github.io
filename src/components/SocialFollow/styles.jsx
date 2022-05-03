@@ -2,21 +2,23 @@ import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 export const Container = styled.div`
   display: flex;
   position: absolute;
-  left: 95%;
-  bottom: 5%;
+  right: 2rem;
+  bottom: 1rem;
   writing-mode: vertical-rl;
   cursor: pointer;
   justify-content: space-around;
-  align-items: center;
-  height: 200px;
+  height: 12rem;
+
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
 `;
 
 export const SocialIcon = styled(FontAwesomeIcon)`
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #fff;
 
   &:hover {

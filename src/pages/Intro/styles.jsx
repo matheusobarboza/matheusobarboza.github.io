@@ -9,6 +9,12 @@ export const Container = styled(motion.div)`
   display: flex;
   justify-content: center;
   background-color: #0F1020;
+  height: 100vh;
+  width: 100%;
+
+  @media screen and (max-width: 360px) {
+    height: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -21,6 +27,14 @@ export const Wrapper = styled.div`
 
 export const Top = styled.div`
   display: flex;
+  
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding-top: 5rem;
+  }
 `;
 export const Bottom = styled.div`
   display: flex;
@@ -33,12 +47,20 @@ export const Left = styled.div`
   display: flex;
   height: 400px;
   margin-right: 50px;
+
+  @media screen and (max-width: 360px) {
+    margin-right: 0;
+  }
 `;
 
 export const Right = styled.div`
   display: flex;
   justify-content: flex-start;
   height: 400px;
+
+  @media screen and (max-width: 360px) {
+    justify-content: center;
+  }
 `;
 
 export const ContainerAboutMe = styled.div`
@@ -122,5 +144,10 @@ export const Next = styled(Link)`
     color: #fff;
     font-weight: 700;
     transform: translateY(-10px);
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.8rem;
+    color: #fff;
   }
 `;

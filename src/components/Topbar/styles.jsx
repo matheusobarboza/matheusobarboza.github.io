@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // global ${({ theme }) => theme.colors.mainColor}
@@ -10,25 +10,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //verde 59e3c5
 // #ccc, #ff5858, #cc2e5d
 
-export const Container = styled.div`
-  width: 100%;
-  height: 70px;
+export const Container = styled.nav`
   background-color: #0f1020;
-  position: fixed;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  z-index: 10;
   top: 0;
-  z-index: 2;
+  position: sticky;
+
+  @media screen and (max-width: 1300px) {
+    justify-content: space-between;
+  }
 `;
 
-export const Wrapper = styled.div`
-  padding: 10px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
 export const Logo = styled(Link)`
   font-family: "League Spartan", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
   text-decoration: none;
   background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d);
   background-size: 200%;
@@ -37,48 +43,59 @@ export const Logo = styled(Link)`
   transition: 0.5s ease-out;
 
   &:hover {
-    /* color: #59e3c5; */
     background-position: -100%;
   }
-`;
-export const Right = styled.div``;
 
-export const Left = styled.div`
-  display: flex;
+  @media screen and (max-width: 360px) {
+    font-size: 1.5rem;
+  }
 `;
 
-export const ItemContainer = styled.div`
+export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-right: 50px;
+
+  @media screen and (max-width: 1045px) {
+    display: none;
+  }
 `;
 
-export const LinkMenu = styled(NavLink)`
-  font-size: 15px;
+export const NavLink = styled(Link)`
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   color: #bfbdc1;
-  letter-spacing: 1.5px;
-  padding: 15px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
   cursor: pointer;
-  transition: transform 250ms;
 
   &:hover {
-    //quando o mouse passar por cima
     color: #fff;
-    transform: translateY(-10px);
   }
 
-  &[class*="active"] {
-    //quando o link estiver ativo
+  &.active{
     color: #fff;
-    font-weight: bold;
   }
 `;
 
-export const AwesomeIcon = styled(FontAwesomeIcon)`
+export const Bars = styled(FontAwesomeIcon)`
   color: ${(props) => props.color};
-  margin-bottom: 2px;
+  display: none;
+
+  @media screen and (max-width: 1045px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 1.8rem;
+  }
 `;

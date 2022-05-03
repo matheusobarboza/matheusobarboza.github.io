@@ -7,41 +7,73 @@ export const Container = styled(motion.div)`
   background-color: #0f1020;
   height: 100vh;
   width: 100%;
+
+  @media screen and (max-width: 1240px) {
+    height: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 8rem;
-  background-color: #0f1020;
+
+  @media screen and (max-width: 1240px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding: 2rem;
+  }
 `;
 
 export const Left = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 60%;
+
+  @media screen and (max-width: 1150px) {
+    max-width: 100%;
+    padding-bottom: 3rem;
+  }
 `;
 
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 40%;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 360px) {
+    max-width: 100%;
+  }
 `;
 
 export const ContainerDescription = styled.div`
   box-shadow: 2rem 2rem 3rem -3rem #897d93;
   border-radius: 2rem;
-`;
 
-export const ContainerImg = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @media screen and (max-width: 360px) {
+    box-shadow: 1rem 1rem 2rem -2rem #897d93;
+    border-radius: 2rem;
+  }
 `;
 
 export const Img = styled.img`
   width: 20rem;
   height: 20rem;
+
+  @media screen and (max-width: 360px) {
+    width: 15rem;
+    height: 15rem;
+  }
 `;
 
 export const MyName = styled.span`
@@ -49,12 +81,20 @@ export const MyName = styled.span`
   font-size: 1.3rem;
   color: #ccd6f6;
   font-weight: 700;
+
+  @media screen and (max-width: 360px) {
+    font-size: 1rem;
+  }
 `;
 
 export const SpanDescription = styled.p`
   font-size: 1.2rem;
   font-family: "League Spartan", sans-serif;
   color: #717c99;
+
+  @media screen and (max-width: 360px) {
+    font-size: 1rem;
+  }
 `;
 
 export const PDescription = styled.p`
@@ -65,6 +105,11 @@ export const PDescription = styled.p`
   text-align: left;
   line-height: 1.8rem;
   padding: 0.5rem;
+
+  @media screen and (max-width: 360px) {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
 `;
 
 export const FavoriteThing = styled.div`
@@ -84,13 +129,25 @@ export const WhoIm = styled.div`
     color: #fff;
     font-weight: 700;
   }
+
+  @media screen and (max-width: 360px) {
+    padding-bottom: 1rem;
+    span {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export const Line = styled.span`
-  width: ${props => props.width};
-  height: 1px;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   background-color: #233554;
   align-self: center;
+  writing-mode: ${(props) => props.writingMode};
+
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
 `;
 
 export const AwesomeIcon = styled(FontAwesomeIcon)`
@@ -118,12 +175,17 @@ export const Next = styled(Link)`
   color: #818796;
   padding: 0.5rem;
 
-  span{
+  span {
     margin-right: 1rem;
   }
 
   &:hover {
     color: #fff;
     font-weight: 700;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.8rem;
+    color: #fff;
   }
 `;

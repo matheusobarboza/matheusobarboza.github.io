@@ -7,9 +7,9 @@ export const Container = styled.div`
 export const Sections = styled.div`
   position: relative;
   width: 100%;
-  height: calc(100vh - 70px);
+  /* height: calc(100vh - 70px); */
   position: relative;
-  top: 70px;
+  /* top: 70px; */
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
