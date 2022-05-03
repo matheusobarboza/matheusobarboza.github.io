@@ -5,12 +5,8 @@ import { Link } from "react-router-dom";
 
 export const Container = styled(motion.div)`
   background-color: #0f1020;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-
-  @media screen and (max-width: 1240px) {
-    height: 100%;
-  }
 `;
 
 export const Wrapper = styled.div`
