@@ -1,8 +1,5 @@
 import {
   Container,
-  Wrapper,
-  Left,
-  Right,
   Logo,
   NavMenu,
   NavLink,
@@ -14,12 +11,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Topbar = () => {
   return (
     <Container>
-      {/* <Wrapper> */}
-      {/* <Left> */}
       <Logo to="/">matheusobarboza.</Logo>
-      {/* </Left> */}
-
-      {/* <Right> */}
       <Bars color="#fff" icon={faBars} />
       <NavMenu>
         <NavLink to={"/"} >
@@ -34,9 +26,6 @@ const Topbar = () => {
         <NavLink to="/skills">
           Habilidades
         </NavLink>
-        {/* <NavLink to="/projects">
-          Projetos
-        </NavLink> */}
         <NavLink to="/services">
           Serviços
         </NavLink>
@@ -44,8 +33,6 @@ const Topbar = () => {
           Contato
         </NavLink>
       </NavMenu>
-      {/* </Right> */}
-      {/* </Wrapper> */}
     </Container>
   );
 };
