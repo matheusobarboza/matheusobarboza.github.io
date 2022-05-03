@@ -44,13 +44,13 @@ const About = () => {
           </WhoIm>
           <ContainerDescription>
             <PDescription>
-              Eu me chamo <MyName>Matheus Barboza,</MyName> tenho 22 anos e sou Alagoano <img src={Cactus} height="40px" alt="" />, me formei no curso de<br />
-              Análise e Desenvolvimento de Sistemas pelo IFBA em Irecê na Bahia, morei 3 anos nessa<br /> cidade maravilhosa. Após concluir a 
-              faculdade eu consegui uma vaga de estagiário como<br /> Dev Front End em Feira de Santana - BA, porém fiquei 
-              pouco tempo e logo retornei para minha<br /> cidade no interior de Alagoas. Atualmente eu trabalho como
-              monitor em uma escola de<br /> programação, e trabalho como autônomo consertando computadores e smartphones,<br />
-              além de desenvolver apps e websites como freelancer. Meu objetivo é focar e me estabilizar<br /> no mercado de trabalho
-              de programação, e tornar essa área como minha principal fonte de<br /> renda. Criei este site para me apresentar
+              Eu me chamo <MyName>Matheus Barboza,</MyName> tenho 22 anos e sou Alagoano <img src={Cactus} height="40px" alt="" />, me formei no curso de
+              Análise e Desenvolvimento de Sistemas pelo IFBA em Irecê na Bahia, morei 3 anos nessa cidade maravilhosa. Após concluir a 
+              faculdade eu consegui uma vaga de estagiário como Dev Front End em Feira de Santana - BA, porém fiquei 
+              pouco tempo e logo retornei para minha cidade no interior de Alagoas. Atualmente eu trabalho como
+              monitor em uma escola de programação, e trabalho como autônomo consertando computadores e smartphones,
+              além de desenvolver apps e websites como freelancer. Meu objetivo é focar e me estabilizar no mercado de trabalho
+              de programação, e tornar essa área como minha principal fonte de renda. Criei este site para me apresentar
               a você visitante e mostrar o meu trabalho. <br /><br/>Quem sabe não podemos conversar e construir algo legal juntos <img src={CoolFace} height="20px" alt="" />. 
             </PDescription>
             <br /> <br />
@@ -104,9 +104,6 @@ const About = () => {
         <Right>
           <ContainerImg>
             <Img src={Me} />
-            <Line width="300px" />
-            <Line width="200px" />
-            <Line width="100px" />
           </ContainerImg>
           <Next to="/portfolio">
             <span>Veja meu Portfólio</span>

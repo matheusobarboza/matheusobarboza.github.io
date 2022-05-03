@@ -111,7 +111,7 @@ export const Next = styled(Link)`
   font-size: 15px;
   text-decoration: none;
   color: #818796;
-  padding: 10px;
+  padding: 1rem;
   transition: transform 250ms;
 
   span{
