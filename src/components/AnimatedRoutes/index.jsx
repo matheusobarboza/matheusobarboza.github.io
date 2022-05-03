@@ -19,13 +19,13 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Intro />} />
-        <Route path="intro" element={<Intro />} />
-        <Route path="about" element={<About />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="services" element={<Services />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/intro" element={<Intro />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
