@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, Breve } from "./styles";
 
 const Services = () => {
   return (
@@ -8,7 +8,9 @@ const Services = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    ></Container>
+    >
+      <Breve>Em breve...</Breve>
+    </Container>
   );
 };
 

@@ -153,6 +153,5 @@ export const Next = styled(Link)`
   @media screen and (max-width: 360px) {
     font-size: 0.8rem;
     color: #fff;
-    padding: 0;
   }
 `;

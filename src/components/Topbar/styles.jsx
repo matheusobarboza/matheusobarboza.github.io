@@ -40,11 +40,7 @@ export const Logo = styled(Link)`
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s ease-out;
-
-  &:hover {
-    background-position: -100%;
-  }
+  background-position: -100%;
 
   @media screen and (max-width: 360px) {
     font-size: 1.5rem;

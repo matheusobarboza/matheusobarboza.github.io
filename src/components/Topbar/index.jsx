@@ -14,9 +14,9 @@ const Topbar = () => {
       <Logo to="/">matheusobarboza.</Logo>
       <Bars color="#fff" icon={faBars} />
       <NavMenu>
-        <NavLink to={"/"} >
+        {/* <NavLink to={"/"} >
           Home
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/about">
           Sobre
         </NavLink>
@@ -27,7 +27,7 @@ const Topbar = () => {
           Habilidades
         </NavLink>
         <NavLink to="/services">
-          Serviços
+          BarbozaTech
         </NavLink>
         <NavLink to="/contact">
           Contato
