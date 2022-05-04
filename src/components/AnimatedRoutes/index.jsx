@@ -14,6 +14,9 @@ import { AnimatePresence } from "framer-motion";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <AnimatePresence>

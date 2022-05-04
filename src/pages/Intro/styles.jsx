@@ -86,9 +86,9 @@ export const AboutMe = styled.p`
 export const MyName = styled.span`
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 4rem;
   color: #fff;
-  margin-top: 15px;
+  margin-top: 1rem;
   transition: transform 250ms; //animação de subir o component part1
   background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d); //animação gradiente 
   background-size: 200%;
@@ -100,6 +100,10 @@ export const MyName = styled.span`
     transform: translateY(-10px); //animação de subir o component part2
     /* font-weight: 600; */
     background-position: -100%;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 2.5rem;
   }
 `;
 
@@ -149,5 +153,6 @@ export const Next = styled(Link)`
   @media screen and (max-width: 360px) {
     font-size: 0.8rem;
     color: #fff;
+    padding: 0;
   }
 `;

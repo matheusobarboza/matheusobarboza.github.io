@@ -40,6 +40,9 @@ import {
 import Me from "../../assets/me-2.png";
 
 const About = () => {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
   const defaultOptions = {
     loop: true,
     autoplay: true,

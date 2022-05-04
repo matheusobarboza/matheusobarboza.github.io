@@ -11,7 +11,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Topbar = () => {
   return (
     <Container>
-      <Logo to="/">matheusobarboza</Logo>
+      <Logo to="/">matheusobarboza.</Logo>
       <Bars color="#fff" icon={faBars} />
       <NavMenu>
         <NavLink to={"/"} >
