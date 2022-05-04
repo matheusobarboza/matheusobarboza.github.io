@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export const Container = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #0f1020;
   height: 100%;
   width: 100%;
@@ -183,5 +186,52 @@ export const Next = styled(Link)`
   @media screen and (max-width: 360px) {
     font-size: 0.8rem;
     color: #fff;
+  }
+`;
+
+export const Divider = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    color: #bfbdc1;
+  }
+`;
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #FFF9EC;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 3rem;
+  padding: 2rem;
+`;
+export const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const SkillsTitle = styled.span`
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #0f1020;
+  font-weight: 500;
+`;
+
+export const AreaTitle = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+  span {
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
   }
 `;

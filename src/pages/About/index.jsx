@@ -4,6 +4,7 @@ import Typical from "react-typical";
 
 import Lottie from "react-lottie";
 import animationData from "../../lotties/hello";
+import { CaretDown } from "phosphor-react";
 
 import {
   faMugHot,
@@ -11,7 +12,7 @@ import {
   faFutbol,
   faLaptopCode,
   faFilm,
-  faArrowRight,
+  faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 
 import Cactus from "../../assets/cacto.svg";
@@ -35,6 +36,11 @@ import {
   PDescription,
   FavoriteThing,
   Next,
+  Divider,
+  SkillsContainer,
+  Skills,
+  AreaTitle,
+  SkillsTitle
 } from "./styles";
 
 import Me from "../../assets/me-2.png";
@@ -42,11 +48,11 @@ import Me from "../../assets/me-2.png";
 const About = () => {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationData
     // rendererSettings: {
     //   preserveAspectRatio: "xMidYMid slice",
     // },
@@ -139,6 +145,24 @@ const About = () => {
           </Next>
         </Right>
       </Wrapper>
+      <Divider>
+        <span>scrool</span>
+        <CaretDown size={150} weight="regular" color="#717c99" />
+      </Divider>
+      <AreaTitle>
+        <span>Áreas de Experiência</span>
+      </AreaTitle>
+      <SkillsContainer>
+        <Skills>
+          <SkillsTitle>Front End</SkillsTitle>
+        </Skills>
+        <Skills>
+          <SkillsTitle>Back End</SkillsTitle>
+        </Skills>
+        <Skills>
+          <SkillsTitle>Suporte</SkillsTitle>
+        </Skills>
+      </SkillsContainer>
     </Container>
   );
 };
