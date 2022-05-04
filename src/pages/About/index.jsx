@@ -4,7 +4,7 @@ import Typical from "react-typical";
 
 import Lottie from "react-lottie";
 import animationData from "../../lotties/hello";
-import { CaretDown } from "phosphor-react";
+import { CaretDown, MonitorPlay, Code, Wrench } from "phosphor-react";
 
 import {
   faMugHot,
@@ -12,7 +12,7 @@ import {
   faFutbol,
   faLaptopCode,
   faFilm,
-  faArrowRight
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Cactus from "../../assets/cacto.svg";
@@ -33,6 +33,7 @@ import {
   WhoIm,
   Line,
   SpanDescription,
+  SpanSkill,
   PDescription,
   FavoriteThing,
   Next,
@@ -40,7 +41,8 @@ import {
   SkillsContainer,
   Skills,
   AreaTitle,
-  SkillsTitle
+  SkillsTitle,
+  SkillsContent,
 } from "./styles";
 
 import Me from "../../assets/me-2.png";
@@ -52,7 +54,7 @@ const About = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData
+    animationData: animationData,
     // rendererSettings: {
     //   preserveAspectRatio: "xMidYMid slice",
     // },
@@ -139,28 +141,79 @@ const About = () => {
         <Right>
           <Img src={Me} />
           <Lottie options={defaultOptions} />
-          <Next to="/portfolio">
+          {/* <Next to="/portfolio">
             <span>Veja meu Portfólio</span>
             <AwesomeIcon color="#fff" icon={faArrowRight} />
-          </Next>
+          </Next> */}
+          <Divider>
+            <span>Veja mais!</span>
+            <CaretDown size={150} weight="regular" color="#717c99" />
+          </Divider>
         </Right>
       </Wrapper>
-      <Divider>
-        <span>scrool</span>
+      {/* <Divider>
+        <span>Veja mais!</span>
         <CaretDown size={150} weight="regular" color="#717c99" />
-      </Divider>
+      </Divider> */}
       <AreaTitle>
         <span>Áreas de Experiência</span>
       </AreaTitle>
       <SkillsContainer>
         <Skills>
-          <SkillsTitle>Front End</SkillsTitle>
+          <SkillsTitle>
+            <span>Front End</span>
+            <MonitorPlay size={50} weight="regular" color="#00b6e6" />
+          </SkillsTitle>
+          <SkillsContent>
+            <Ul>
+              <FavoriteThing>
+                <SpanSkill>React Js;</SpanSkill>
+              </FavoriteThing>
+              <FavoriteThing>
+                <SpanSkill>React Native;</SpanSkill>
+              </FavoriteThing>
+              <FavoriteThing>
+                <SpanSkill>Redux;</SpanSkill>
+              </FavoriteThing>
+            </Ul>
+          </SkillsContent>
         </Skills>
+        <Line width="1px" height="90%" writingMode="vertical-lr" />
         <Skills>
-          <SkillsTitle>Back End</SkillsTitle>
+          <SkillsTitle>
+            <span>Back End</span>
+            <Code size={50} weight="regular" color="#00b6e6" />
+          </SkillsTitle>
+          <SkillsContent>
+            <Ul>
+              <FavoriteThing>
+                <SpanSkill>JavaScript;</SpanSkill>
+              </FavoriteThing>
+              <FavoriteThing>
+                <SpanSkill>Node Js;</SpanSkill>
+              </FavoriteThing>
+            </Ul>
+          </SkillsContent>
         </Skills>
+        <Line width="1px" height="90%" writingMode="vertical-lr" />
         <Skills>
-          <SkillsTitle>Suporte</SkillsTitle>
+          <SkillsTitle>
+            <span>Suporte</span>
+            <Wrench size={50} weight="regular" color="#00b6e6" />
+          </SkillsTitle>
+          <SkillsContent>
+            <Ul>
+              <FavoriteThing>
+                <SpanSkill>Formatação de Micros;</SpanSkill>
+              </FavoriteThing>
+              <FavoriteThing>
+                <SpanSkill>Software (Android &amp; IOS);</SpanSkill>
+              </FavoriteThing>
+              <FavoriteThing>
+                <SpanSkill>Linux;</SpanSkill>
+              </FavoriteThing>
+            </Ul>
+          </SkillsContent>
         </Skills>
       </SkillsContainer>
     </Container>

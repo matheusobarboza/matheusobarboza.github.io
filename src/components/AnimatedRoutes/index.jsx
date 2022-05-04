@@ -5,10 +5,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Intro from "../../pages/Intro";
 import About from "../../pages/About";
 import Portfolio from "../../pages/Portfolio";
-import Skills from "../../pages/Skills";
-import Projects from "../../pages/Projects";
 import Contact from "../../pages/Contact";
-import Services from "../../pages/Services";
+import BarbozaTech from "../../pages/BarbozaTech";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -25,10 +23,8 @@ const AnimatedRoutes = () => {
         <Route path="intro" element={<Intro />} />
         <Route path="about" element={<About />} />
         <Route path="portfolio" element={<Portfolio />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="barbozaTech" element={<BarbozaTech />} />
       </Routes>
     </AnimatePresence>
   );

@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   position: absolute;
   right: 2rem;
-  bottom: 1rem;
+  bottom: 0;
   writing-mode: vertical-rl;
   cursor: pointer;
   justify-content: space-around;

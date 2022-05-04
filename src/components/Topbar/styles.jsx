@@ -60,7 +60,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1045px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -90,7 +90,7 @@ export const Bars = styled(FontAwesomeIcon)`
   color: ${(props) => props.color};
   display: none;
 
-  @media screen and (max-width: 1045px) {
+  @media screen and (max-width: 1000px) {
     display: block;
     position: absolute;
     top: 0;
@@ -103,4 +103,11 @@ export const Bars = styled(FontAwesomeIcon)`
   @media screen and (max-width: 360px) {
     font-size: 1.8rem;
   }
+`;
+
+export const Circle = styled.div`
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00b6e6;
 `;

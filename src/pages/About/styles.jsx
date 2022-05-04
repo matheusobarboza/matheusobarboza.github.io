@@ -47,7 +47,7 @@ export const Right = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   @media screen and (max-width: 360px) {
@@ -96,6 +96,22 @@ export const SpanDescription = styled.p`
   }
 `;
 
+export const SpanSkill = styled.p`
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #172a3a;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 1150px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 1rem;
+  }
+`;
+
 export const PDescription = styled.p`
   font-size: 1.2rem;
   font-family: "League Spartan", sans-serif;
@@ -115,6 +131,7 @@ export const FavoriteThing = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 `;
 
 export const WhoIm = styled.div`
@@ -143,6 +160,7 @@ export const Line = styled.span`
   background-color: #233554;
   align-self: center;
   writing-mode: ${(props) => props.writingMode};
+  color: #134074;
 
   @media screen and (max-width: 360px) {
     display: none;
@@ -205,22 +223,62 @@ export const SkillsContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  background-color: #FFF9EC;
+  width: 60%;
+  height: 32rem;
+  background-color: #fff;
   border-radius: 1rem 1rem 0 0;
   margin-top: 3rem;
-  padding: 2rem;
+
+  @media screen and (max-width: 1150px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 export const Skills = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+
+  @media screen and (max-width: 360px) {
+    margin-bottom: 1.5rem;
+  }
 `;
 
-export const SkillsTitle = styled.span`
-  font-family: "League Spartan", sans-serif;
-  font-size: 1.5rem;
-  color: #0f1020;
-  font-weight: 500;
+export const SkillsContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+`;
+
+export const SkillsTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    color: #134074;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 0.6rem;
+
+    span {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export const AreaTitle = styled.div`
@@ -233,5 +291,11 @@ export const AreaTitle = styled.div`
     font-size: 2rem;
     color: #fff;
     font-weight: 600;
+  }
+
+  @media screen and (max-width: 360px) {
+    span {
+      font-size: 1.5rem;
+    }
   }
 `;

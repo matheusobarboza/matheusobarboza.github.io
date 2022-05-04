@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Breve } from "./styles";
 
-const Services = () => {
+const BarbozaTech = () => {
   return (
     <Container
     initial={{ opacity: 0 }}
@@ -14,4 +14,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default BarbozaTech;
