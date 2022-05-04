@@ -41,6 +41,15 @@ export const Logo = styled(Link)`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: -100%;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background: linear-gradient(to right, #cc2e5d, #ff5858 50%, #ccc 50%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: -200%;
+  }
 
   @media screen and (max-width: 360px) {
     font-size: 1.5rem;
@@ -72,7 +81,7 @@ export const NavLink = styled(Link)`
     color: #fff;
   }
 
-  &.active{
+  &.active {
     color: #fff;
   }
 `;

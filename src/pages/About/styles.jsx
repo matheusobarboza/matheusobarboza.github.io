@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
 export const Left = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 50%;
 
   @media screen and (max-width: 1150px) {
     max-width: 100%;
@@ -43,7 +43,7 @@ export const Left = styled.div`
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  max-width: 50%;
   justify-content: space-between;
   align-items: center;
 
@@ -63,12 +63,12 @@ export const ContainerDescription = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
 
   @media screen and (max-width: 360px) {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
   }
 `;
 

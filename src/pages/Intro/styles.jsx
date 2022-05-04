@@ -138,7 +138,6 @@ export const Next = styled(Link)`
   text-decoration: none;
   color: #818796;
   padding: 1rem;
-  transition: transform 250ms;
 
   span{
     margin-right: 15px;
@@ -147,7 +146,6 @@ export const Next = styled(Link)`
   &:hover {
     color: #fff;
     font-weight: 700;
-    transform: translateY(-10px);
   }
 
   @media screen and (max-width: 360px) {
