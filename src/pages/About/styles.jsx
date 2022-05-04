@@ -214,7 +214,14 @@ export const Divider = styled.div`
   flex-direction: column;
 
   span {
+    font-size: 1.2rem;
     color: #bfbdc1;
+  }
+
+  @media screen and (max-width: 360px) {
+    span {
+      font-size: 1rem;
+    }
   }
 `;
 
