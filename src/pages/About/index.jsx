@@ -12,7 +12,6 @@ import {
   faFutbol,
   faLaptopCode,
   faFilm,
-  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Cactus from "../../assets/cacto.svg";
@@ -36,7 +35,6 @@ import {
   SpanSkill,
   PDescription,
   FavoriteThing,
-  Next,
   Divider,
   SkillsContainer,
   Skills,

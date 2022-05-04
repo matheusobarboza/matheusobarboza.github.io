@@ -1,4 +1,4 @@
-import { Container, Logo, NavMenu, NavLink, Bars, Circle } from "./styles";
+import { Container, Logo, NavMenu, NavLink, Bars } from "./styles";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Anchor } from "phosphor-react";
