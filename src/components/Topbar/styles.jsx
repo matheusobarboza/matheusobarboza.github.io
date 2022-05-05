@@ -2,14 +2,6 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// global ${({ theme }) => theme.colors.mainColor}
-//background 0F1020
-//background second option 212121
-//font primary BFBDC1
-//font second 818796
-//verde 59e3c5
-// #ccc, #ff5858, #cc2e5d
-
 export const Container = styled.nav`
   background-color: #0f1020;
   height: 80px;
@@ -51,7 +43,7 @@ export const Logo = styled(Link)`
     background-position: -200%;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1.5rem;
   }
 `;
@@ -100,7 +92,7 @@ export const Bars = styled(FontAwesomeIcon)`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1.8rem;
   }
 `;

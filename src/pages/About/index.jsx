@@ -54,10 +54,7 @@ const About = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData
-    // rendererSettings: {
-    //   preserveAspectRatio: "xMidYMid slice",
-    // },
+    animationData: animationData,
   };
 
   return (
@@ -141,20 +138,12 @@ const About = () => {
         <Right>
           <Img src={Me} />
           <Lottie options={defaultOptions} />
-          {/* <Next to="/portfolio">
-            <span>Veja meu Portfólio</span>
-            <AwesomeIcon color="#fff" icon={faArrowRight} />
-          </Next> */}
           <Divider>
             <span>Veja mais!</span>
             <CaretDown size={150} weight="regular" color="#717c99" />
           </Divider>
         </Right>
       </Wrapper>
-      {/* <Divider>
-        <span>Veja mais!</span>
-        <CaretDown size={150} weight="regular" color="#717c99" />
-      </Divider> */}
       <AreaTitle>
         <span>Áreas de Experiência</span>
       </AreaTitle>
@@ -179,7 +168,7 @@ const About = () => {
               </Ul>
             </SkillsContent>
           </Skills>
-          <Line width="1px" height="50%" writingMode="vertical-lr" />
+          <Line width="1px" height="60%" writingMode="vertical-lr" />
           <Skills>
             <SkillsTitle>
               <span>Back End</span>
@@ -197,6 +186,7 @@ const About = () => {
             </SkillsContent>
           </Skills>
         </SkillsTop>
+        <Line width="60%" height="1px" writingMode="horizontal-tb" />
         <SkillsBottom>
           <Skills>
             <SkillsTitle>
@@ -218,7 +208,6 @@ const About = () => {
             </SkillsContent>
           </Skills>
         </SkillsBottom>
-        {/* <Line width="1px" height="90%" writingMode="vertical-lr" /> */}
       </SkillsContainer>
     </Container>
   );

@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
     align-items: center;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     padding: 2rem;
   }
 `;
@@ -50,7 +50,7 @@ export const Right = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     max-width: 100%;
   }
 `;
@@ -59,7 +59,7 @@ export const ContainerDescription = styled.div`
   box-shadow: 2rem 2rem 3rem -3rem #897d93;
   border-radius: 2rem;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 412px) {
     box-shadow: 1rem 1rem 2rem -2rem #897d93;
     border-radius: 2rem;
   }
@@ -69,7 +69,7 @@ export const Img = styled.img`
   width: 18rem;
   height: 18rem;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     width: 13rem;
     height: 13rem;
   }
@@ -81,7 +81,7 @@ export const MyName = styled.span`
   color: #ccd6f6;
   font-weight: 700;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1rem;
   }
 `;
@@ -91,7 +91,7 @@ export const SpanDescription = styled.p`
   font-family: "League Spartan", sans-serif;
   color: #717c99;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1rem;
   }
 `;
@@ -107,7 +107,7 @@ export const SpanSkill = styled.p`
     font-size: 1.3rem;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1rem;
   }
 `;
@@ -121,7 +121,7 @@ export const PDescription = styled.p`
   line-height: 1.8rem;
   padding: 0.5rem;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 1rem;
     line-height: 1.1rem;
   }
@@ -146,7 +146,7 @@ export const WhoIm = styled.div`
     font-weight: 700;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     padding-bottom: 1rem;
     span {
       font-size: 1.3rem;
@@ -162,7 +162,7 @@ export const Line = styled.span`
   writing-mode: ${(props) => props.writingMode};
   color: #134074;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
@@ -201,7 +201,7 @@ export const Next = styled(Link)`
     font-weight: 700;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 0.8rem;
     color: #fff;
   }
@@ -218,7 +218,7 @@ export const Divider = styled.div`
     color: #bfbdc1;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     span {
       font-size: 1rem;
     }
@@ -231,7 +231,7 @@ export const SkillsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 60%;
-  height: 32rem;
+  height: 40rem;
   background-color: #fff;
   border-radius: 1rem 1rem 0 0;
   margin-top: 3rem;
@@ -240,7 +240,7 @@ export const SkillsContainer = styled.div`
     width: 90%;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -252,9 +252,8 @@ export const Skills = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 50vh;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     margin-bottom: 1.5rem;
   }
 `;
@@ -264,10 +263,13 @@ export const SkillsTop = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 50vh;
+  height: 50%;
+  width: 80%;
 
-  @media screen and (max-width: 360px) {
-    margin-bottom: 1.5rem;
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    height: 60%;
+    margin-top: 2rem;
   }
 `;
 
@@ -275,10 +277,10 @@ export const SkillsBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 50vh; */
+  height: 50%;
 
-  @media screen and (max-width: 360px) {
-    margin-bottom: 1.5rem;
+  @media screen and (max-width: 414px) {
+    height: 40%;
   }
 `;
 
@@ -295,6 +297,7 @@ export const SkillsTitle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 
   span {
     font-family: "League Spartan", sans-serif;
@@ -303,9 +306,7 @@ export const SkillsTitle = styled.div`
     font-weight: 500;
   }
 
-  @media screen and (max-width: 360px) {
-    margin-top: 0.6rem;
-
+  @media screen and (max-width: 414px) {
     span {
       font-size: 1.3rem;
     }
@@ -324,7 +325,7 @@ export const AreaTitle = styled.div`
     font-weight: 600;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     span {
       font-size: 1.5rem;
     }

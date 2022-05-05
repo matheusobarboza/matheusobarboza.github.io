@@ -12,7 +12,7 @@ export const Container = styled(motion.div)`
   height: 100vh;
   width: 100%;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     height: 100%;
   }
 `;
@@ -32,7 +32,7 @@ export const Top = styled.div`
     flex-direction: column;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     padding-top: 5rem;
   }
 `;
@@ -48,7 +48,7 @@ export const Left = styled.div`
   height: 400px;
   margin-right: 50px;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     margin-right: 0;
   }
 `;
@@ -58,7 +58,7 @@ export const Right = styled.div`
   justify-content: flex-start;
   height: 400px;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     justify-content: center;
   }
 `;
@@ -102,7 +102,7 @@ export const MyName = styled.span`
     background-position: -100%;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 2.5rem;
   }
 `;
@@ -148,7 +148,7 @@ export const Next = styled(Link)`
     font-weight: 700;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     font-size: 0.8rem;
     color: #fff;
   }

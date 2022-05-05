@@ -12,7 +12,7 @@ export const Container = styled.div`
   justify-content: space-around;
   height: 12rem;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
