@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Container = styled.nav`
   background-color: #0f1020;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 1rem;
@@ -102,4 +103,64 @@ export const Circle = styled.div`
   height: 6px;
   border-radius: 50%;
   background-color: #00b6e6;
+`;
+
+export const MenuBars = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  opacity: 0.9;
+  right: 0;
+  transition: all 0.5s ease;
+  z-index: -1;
+  background: #343549;
+  align-items: center;
+  border-radius: 2rem 0 0 2rem;
+
+  &.active {
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 40%;
+  }
+`;
+
+export const MenuContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-top: 4rem;
+`;
+
+export const MenuItem = styled.li`
+  height: 80px;
+
+  @media screen and (max-width: 414px) {
+    height: 50px;
+  }
+`;
+
+export const MenuLink = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+
+  &:hover {
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
 `;

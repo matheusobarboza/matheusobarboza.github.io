@@ -16,9 +16,9 @@ export const Container = styled(motion.div)`
     height: 100%;
   }
 
-  @media screen and (max-width: 896px) {
+  /* @media screen and (max-width: 896px) {
     height: 100%;
-  }
+  } */
 `;
 
 export const Wrapper = styled.div`
