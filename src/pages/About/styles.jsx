@@ -227,9 +227,9 @@ export const Divider = styled.div`
 
 export const SkillsContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 60%;
   height: 32rem;
   background-color: #fff;
@@ -246,12 +246,36 @@ export const SkillsContainer = styled.div`
     justify-content: space-between;
   }
 `;
+
 export const Skills = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 50vh;
+
+  @media screen and (max-width: 360px) {
+    margin-bottom: 1.5rem;
+  }
+`;
+
+export const SkillsTop = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+
+  @media screen and (max-width: 360px) {
+    margin-bottom: 1.5rem;
+  }
+`;
+
+export const SkillsBottom = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 50vh; */
 
   @media screen and (max-width: 360px) {
     margin-bottom: 1.5rem;
