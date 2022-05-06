@@ -15,7 +15,7 @@ import {
   AwesomeIcon,
   Next,
   Top,
-  NextIcon
+  NextIcon,
 } from "./styles";
 
 import { faHandPeace, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -26,7 +26,7 @@ const Intro = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData
+    animationData: animationData,
     // rendererSettings: {
     //   preserveAspectRatio: "xMidYMid slice",
     // },
@@ -52,15 +52,14 @@ const Intro = () => {
               <MyName title="Surprise :)">Matheus.</MyName>
               <Ocupation>
                 <Typical
-                  style={{ width: "5rem" }}
                   steps={[
                     1000,
                     "desenvolvedor front end",
                     1000,
-                    "suporte técnico"
+                    "suporte técnico",
                   ]}
                   loop={Infinity}
-                  wrapper="b"
+                  wrapper="small"
                 />
               </Ocupation>
               <AboutMe style={{ marginTop: 5 }}>Freelancer</AboutMe>

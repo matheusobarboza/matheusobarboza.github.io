@@ -57,7 +57,7 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 
 export const ContainerAboutMe = styled.div`
