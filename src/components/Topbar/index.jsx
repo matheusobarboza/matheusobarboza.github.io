@@ -18,7 +18,7 @@ import {
   faXmark,
   faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
-import { Anchor, X } from "phosphor-react";
+import { Anchor } from "phosphor-react";
 
 import { useMatch, useResolvedPath } from "react-router-dom";
 

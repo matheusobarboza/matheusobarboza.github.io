@@ -15,7 +15,6 @@ import {
   AwesomeIcon,
   Next,
   Top,
-  Bottom,
   NextIcon
 } from "./styles";
 
