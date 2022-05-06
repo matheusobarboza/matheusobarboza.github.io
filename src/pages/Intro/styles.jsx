@@ -13,8 +13,8 @@ export const Container = styled(motion.div)`
   height: 100vh;
   width: 100%;
 
-  @media screen and (max-width: 414px) {
-    height: 100vh;
+  @media screen and (max-width: 915px) and (max-height: 414px) {
+    height: 100%;
   }
 `;
 
