@@ -12,8 +12,8 @@ import {
   MenuLink,
 } from "./styles";
 
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Anchor } from "phosphor-react";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Anchor, X } from "phosphor-react";
 
 import { useMatch, useResolvedPath } from "react-router-dom";
 
@@ -71,9 +71,10 @@ const Topbar = () => {
     <Container>
       <Logo to="/">matheusobarboza.</Logo>
       <Bars
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        menuopen={isMenuOpen}
+        onClick={() => setIsMenuOpen(isMenuOpen ? false : true)}
         color="#fff"
-        icon={faBars}
+        icon={isMenuOpen ? faXmark : faBars}
       />
       <NavMenu>
         <CustomLink to="/about">Sobre</CustomLink>
@@ -104,6 +105,7 @@ const Topbar = () => {
           </MenuContainer>
         </MenuBars>
       )}
+      
     </Container>
   );
 };
