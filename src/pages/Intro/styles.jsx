@@ -7,49 +7,47 @@ import { Link } from "react-router-dom";
 
 export const Container = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #0F1020;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
   @media screen and (max-width: 414px) {
-    height: 100%;
+    height: 100vh;
   }
-
-  /* @media screen and (max-width: 896px) {
-    height: 100%;
-  } */
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 7rem;
+  /* background: red; */
+
+  @media screen and (max-width: 414px) {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }  
+
+  @media screen and (max-width: 360px) {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }  
 `;
 
 export const Top = styled.div`
   display: flex;
+  flex-direction:row;
   
   @media screen and (max-width: 760px) {
     flex-direction: column;
   }
-
-  @media screen and (max-width: 414px) {
-    padding-top: 5rem;
-  }
-`;
-export const Bottom = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 50%;
 `;
 
 export const Left = styled.div`
   display: flex;
-  height: 400px;
   margin-right: 50px;
 
   @media screen and (max-width: 414px) {
@@ -60,11 +58,6 @@ export const Left = styled.div`
 export const Right = styled.div`
   display: flex;
   justify-content: flex-start;
-  height: 400px;
-
-  @media screen and (max-width: 414px) {
-    justify-content: center;
-  }
 `;
 
 export const ContainerAboutMe = styled.div`
@@ -74,15 +67,15 @@ export const ContainerAboutMe = styled.div`
 
 export const Hello = styled.span`
   font-family: "League Spartan", sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #fff;
 `;
 
 export const AboutMe = styled.p`
-  margin-top: 20px;
+  margin-top: 1.3rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #818796;
   text-align: justify;
 `;
@@ -107,7 +100,7 @@ export const MyName = styled.span`
   }
 
   @media screen and (max-width: 414px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -115,7 +108,7 @@ export const Ocupation = styled.span`
   margin-top: 20px;
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 1rem;
   color: #73f26c;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -136,15 +129,17 @@ export const NextIcon = styled(FontAwesomeIcon)`
 `;
 
 export const Next = styled(Link)`
+  display: flex;
+  justify-content: center;
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #818796;
-  padding: 1rem;
+  padding-bottom: 2rem;
 
   span{
-    margin-right: 15px;
+    margin-right: 1rem;
   }
 
   &:hover {
@@ -155,5 +150,6 @@ export const Next = styled(Link)`
   @media screen and (max-width: 414px) {
     font-size: 0.8rem;
     color: #fff;
+    padding-bottom: 0;
   }
 `;

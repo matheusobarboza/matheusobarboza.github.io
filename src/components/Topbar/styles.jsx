@@ -79,6 +79,11 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const Icon = styled(FontAwesomeIcon)`
+  color: ${(props) => props.color};
+  /* margin-left: 2rem; */
+`;
+
 export const Bars = styled(FontAwesomeIcon)`
   color: ${(props) => props.color};
   display: none;
@@ -89,7 +94,7 @@ export const Bars = styled(FontAwesomeIcon)`
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: ${(props) => props.menuopen ? '3rem' : '2rem'};
+    font-size: 2rem;
     cursor: pointer;
   }
 
@@ -108,15 +113,14 @@ export const Circle = styled.div`
 export const MenuBars = styled.div`
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   position: absolute;
-  opacity: 0.9;
+  opacity: 0.8;
   right: 0;
   transition: all 0.5s ease;
   z-index: -1;
-  background: #343549;
+  background: #0f1020;
   align-items: center;
-  border-radius: 2rem 0 0 2rem;
 
   &.active {
     transition: all 0.5s ease;
@@ -124,10 +128,6 @@ export const MenuBars = styled.div`
 
   @media screen and (min-width: 1000px) {
     display: none;
-  }
-
-  @media screen and (max-width: 414px) {
-    width: 40%;
   }
 `;
 
@@ -148,6 +148,10 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;

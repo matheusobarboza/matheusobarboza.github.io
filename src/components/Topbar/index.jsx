@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 import {
   Container,
@@ -10,36 +10,20 @@ import {
   MenuContainer,
   MenuItem,
   MenuLink,
+  Icon
 } from "./styles";
 
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faXmark,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 import { Anchor, X } from "phosphor-react";
 
 import { useMatch, useResolvedPath } from "react-router-dom";
 
 const Topbar = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const ref = useRef()
-
-  useEffect(() => {
-    const checkIfClickedOutside = e => {
-      // If the menu is open and the clicked target is not within the menu,
-      // then close the menu
-      if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
-        setIsMenuOpen(false)
-      }
-    }
-
-    document.addEventListener("mousedown", checkIfClickedOutside)
-
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener("mousedown", checkIfClickedOutside)
-    }
-  }, [isMenuOpen])
-
 
   function CustomLink({ children, to, ...props }) {
     //adicionar elemento ao navlink quando está ativo
@@ -57,7 +41,7 @@ const Topbar = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "flex-end",
-              marginTop: "2px",
+              marginTop: "2px"
             }}
           >
             <Anchor color="#00b6e6" size={15} />
@@ -71,7 +55,6 @@ const Topbar = () => {
     <Container>
       <Logo to="/">matheusobarboza.</Logo>
       <Bars
-        menuopen={isMenuOpen}
         onClick={() => setIsMenuOpen(isMenuOpen ? false : true)}
         color="#fff"
         icon={isMenuOpen ? faXmark : faBars}
@@ -88,24 +71,35 @@ const Topbar = () => {
         </CustomLink>
       </NavMenu>
       {isMenuOpen && (
-        <MenuBars ref={ref}>
+        <MenuBars>
           <MenuContainer>
             <MenuItem>
-              <MenuLink to="/about" onClick={() => setIsMenuOpen(false)}>Sobre</MenuLink>
+              <MenuLink to="/about" onClick={() => setIsMenuOpen(false)}>
+                Sobre
+                <Icon color="#fff" icon={faArrowRight} />
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>Portfólio</MenuLink>
+              <MenuLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
+                Portfólio
+                <Icon color="#fff" icon={faArrowRight} />
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contato</MenuLink>
+              <MenuLink to="/contact" onClick={() => setIsMenuOpen(false)}>
+                Contato
+                <Icon color="#fff" icon={faArrowRight} />
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/barbozatech" onClick={() => setIsMenuOpen(false)}>BarbozaTech</MenuLink>
+              <MenuLink to="/barbozatech" onClick={() => setIsMenuOpen(false)}>
+                BarbozaTech
+                <Icon color="#fff" icon={faArrowRight} />
+              </MenuLink>
             </MenuItem>
           </MenuContainer>
         </MenuBars>
       )}
-      
     </Container>
   );
 };

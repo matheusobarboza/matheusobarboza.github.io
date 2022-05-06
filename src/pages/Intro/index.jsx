@@ -16,7 +16,7 @@ import {
   Next,
   Top,
   Bottom,
-  NextIcon,
+  NextIcon
 } from "./styles";
 
 import { faHandPeace, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +27,7 @@ const Intro = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationData
     // rendererSettings: {
     //   preserveAspectRatio: "xMidYMid slice",
     // },
@@ -50,10 +50,16 @@ const Intro = () => {
                 Olá <AwesomeIcon color="yellow" icon={faHandPeace} />, eu me
                 chamo
               </Hello>
-              <MyName title="Surprise :)" >Matheus.</MyName>
+              <MyName title="Surprise :)">Matheus.</MyName>
               <Ocupation>
                 <Typical
-                  steps={[1000, "desenvolvedor front end", 1000, "suporte técnico"]}
+                  style={{ width: "5rem" }}
+                  steps={[
+                    1000,
+                    "desenvolvedor front end",
+                    1000,
+                    "suporte técnico"
+                  ]}
                   loop={Infinity}
                   wrapper="b"
                 />
@@ -69,13 +75,11 @@ const Intro = () => {
             </ContainerAboutMe>
           </Right>
         </Top>
-        <Bottom>
-          <Next to="/about">
-            <span>Veja mais sobre mim</span>
-            <NextIcon color="#818796" size="1x" icon={faArrowRight} />
-          </Next>
-        </Bottom>
       </Wrapper>
+      <Next to="/about">
+        <span>Veja mais sobre mim</span>
+        <NextIcon color="#818796" size="1x" icon={faArrowRight} />
+      </Next>
     </Container>
   );
 };
