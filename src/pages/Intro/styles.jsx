@@ -10,7 +10,7 @@ export const Container = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   background-color: #0F1020;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 
   @media screen and (max-width: 414px) {
